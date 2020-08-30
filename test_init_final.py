@@ -1873,7 +1873,7 @@ class mainCog(commands.Cog):
 		if ctx.message.channel.id == basicSetting[7]:
 			msg = ctx.message.content[len(ctx.invoked_with)+1:]
 			sayMessage = msg
-			await self.bot.change_presence(status=discord.Status.dnd, activity=discord.Game(name="v4 하는중", type=1), afk=False)
+			await self.bot.change_presence(status=discord.Status.dnd, activity=discord.Game(name="v4하는중", type=1), afk=False)
 
 			await ctx.send( '< 상태메세지 변경완료 >', tts=False)
 		else:
