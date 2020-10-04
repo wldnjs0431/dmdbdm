@@ -3210,7 +3210,7 @@ class IlsangDistributionBot(commands.AutoShardedBot):
 
 		# 디스코드에는 현재 본인이 어떤 게임을 플레이하는지 보여주는 기능이 있습니다.
 		# 이 기능을 사용하여 봇의 상태를 간단하게 출력해줄 수 있습니다.
-		await self.change_presence(status=discord.Status.dnd, activity=discord.Game(name=command[1][0], type=1), afk=False)
+		await self.change_presence(status=discord.Status.dnd, activity=discord.Game(name="v4하는중", type=1), afk=False)
 
 	async def on_message(self, msg):
 		await self.wait_until_ready()
